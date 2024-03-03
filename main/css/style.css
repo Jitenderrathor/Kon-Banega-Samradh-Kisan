@@ -1,0 +1,495 @@
+ /* 01. Google Font Start ------------------------------ */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700;900&display=swap');
+ /* ------------- Google Font End ------------- */
+ /* 02.base Start ------------------------------ */
+ 
+ :root {
+     --font-family1: 'Eczar', serif;
+     --font-family2: 'Noto Sans', sans-serif;
+ }
+ 
+ body {
+     color: #222;
+     font-family: var(--font-family1);
+     font-size: 1rem;
+     background-color: #EFE5C1;
+ }
+ 
+ #my-canvas {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100vh;
+     /* z-index: ; */
+ }
+ 
+ .container-xxl {
+     /* background-color: #EFE5C1; */
+ }
+ 
+ section {
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: #222;
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     letter-spacing: -1px;
+     line-height: 1.2;
+ }
+ 
+ p {
+     font-size: 1.8rem;
+     font-weight: 400;
+ }
+ 
+ #background {
+     width: 100%;
+     position: fixed;
+     bottom: 5px;
+     right: 0;
+     z-index: -1;
+ }
+ /* ------------- base End ------------- */
+ /* 04. Header Scetion Start ------------------------------ */
+ 
+ .header h1 {
+     font-family: var(--font-family2);
+     font-size: 44px;
+     font-weight: 700;
+     padding: 40px 0;
+     text-align: center;
+ }
+ 
+ .header .col-2:first-child img {
+     width: 120px !important;
+ }
+ 
+ .header .col-2:last-child img {
+     width: 200px !important;
+ }
+ 
+ .header span:first-child {
+     color: #FC3838;
+ }
+ 
+ .header span:last-child {
+     color: #003865;
+ }
+ /* -------------  Header Scetion  End ------------- */
+ /* 05. Form Scetion Start ------------------------------ */
+ 
+ .form {
+     background-color: #434343;
+     border-radius: 10px;
+ }
+ 
+ .form .row {
+     border-radius: 10px !important;
+ }
+ 
+ .form .field {
+     background-color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     overflow: hidden;
+     align-self: center;
+ }
+ 
+ .form .field input {
+     border: none;
+     font-size: 16px;
+     padding: 5px;
+     width: 100%;
+ }
+ 
+ .form .field img.field_img1,
+ .form .field img.field_img2 {
+     width: 20px;
+     margin-left: 6px;
+ }
+ 
+ .form .field img.field_img3 {
+     width: 22px;
+     margin-left: 6px;
+     /* color: #434343;
+     font-size: 16px;
+     padding: 10px; */
+ }
+ 
+ .type-btn,
+ .start_game {
+     background-color: #EF5B0C;
+     font-family: var(--font-family2);
+     font-size: 16px;
+     font-weight: 700;
+     line-height: 18px;
+     color: #fff;
+     border: 0;
+     padding: 9px 20px;
+     border-radius: 10px;
+     transition: all .5s;
+ }
+ 
+ .start_game:hover {
+     background-color: #1e4340;
+     /* color:#; */
+ }
+ 
+ .col-7 {
+     color: #1e4340;
+     margin-top: 48px;
+ }
+ 
+ .col-7 h1 {
+     font-family: var(--font-family2);
+     font-weight: 800;
+     font-size: 64px;
+ }
+ 
+ .col-7 h5 {
+     font-weight: 600;
+     font-size: 36px;
+ }
+ /* -------------  Form Scetion  End ------------- */
+ /*  Start Game Scetion Start ------------------------------ */
+ 
+ .logo_home {}
+ /* -------------  Start Game Scetion  End ------------- */
+ 
+ .home {
+     /* opacity: 0; */
+     /* pointer-events: none; */
+     transition: all 0.3s ease;
+ }
+ /* 06. Instraction Scetion Start ------------------------------ */
+ 
+ .info_box,
+ .price_box {
+     /* opacity: 0; */
+     /* pointer-events: none; */
+     transition: all 0.3s ease;
+ }
+ 
+ .info-list li.info {
+     color: #2B3B5B !important;
+ }
+ 
+ .info-list img.crop {
+     width: 30px;
+     color: #2c3f5d;
+ }
+ 
+ .info-list img.lifeline {
+     width: 40px;
+     color: #2c3f5d;
+ }
+ /* -------------  Instraction Scetion  End ------------- */
+ /* 06. Game Scetion Start ------------------------------ */
+ 
+ .quiz_box {
+     /* opacity: 0; */
+     /* pointer-events: none; */
+     transition: all 0.3s ease;
+ }
+ 
+ .timer-box {
+     position: relative;
+     z-index: 1;
+     transform: translateX(50px);
+ }
+ 
+ .timer-box img {
+     width: 110px;
+ }
+ 
+ .time-box {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+ 
+ .time-box .timer_sec {
+     font-size: 36px;
+     font-weight: 800;
+     color: #2E4052;
+ }
+ 
+ .time-box .time_left_txt {
+     font-size: 14px;
+     font-weight: 600;
+     color: #2E4052;
+     position: relative;
+     top: -15px;
+ }
+ 
+ .timer .total_que {
+     background-color: #001453;
+     padding: 10px 10px 10px 70px;
+     border-radius: 10px;
+     transform: translateX(-50px);
+ }
+ 
+ .timer .total_que {
+     border-radius: 6px;
+ }
+ 
+ .timer .total_que p {
+     font-size: 16px !important;
+     color: white;
+     font-size: 20px;
+ }
+ 
+ .que_text h4 {
+     font-family: var(--font-family2);
+     font-size: 24px;
+     font-weight: 600;
+     text-align: center;
+     margin: 0;
+ }
+ 
+ .option_list {
+     position: relative;
+     z-index: 1000;
+ }
+ 
+ .option_list .col-5 {
+     border-radius: 6px;
+     background-color: #fff;
+     font-family: var(--font-family2);
+     font-size: 16px;
+     font-weight: 500;
+     padding: 10px;
+     margin: 20px 0 0 0;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .option_list .col-5 img {
+     width: 25px;
+ }
+ 
+ .option_box_cover {
+     width: 130px;
+     height: 50px;
+     line-height: 50px !important;
+     font-size: 20px;
+     font-weight: 400;
+     text-align: center;
+     cursor: pointer;
+     color: #fff;
+     background: #007bff;
+     transition: all 0.3s ease;
+     border-radius: 5px;
+ }
+ /* .next_btn {
+     display: none;
+ } */
+ 
+ .next_btn img {
+     width: 25px !important;
+     height: 23px !important;
+ }
+ /* .user-info {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ } */
+ 
+ .ans img {
+     width: 15px;
+ }
+ /* -------------  Game Scetion  End ------------- */
+ 
+ .quiz_option {
+     width: 100%;
+     position: fixed;
+     bottom: 60px;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+ 
+ .quiz_option img {
+     cursor: pointer;
+     /* width: 100% !important; */
+     width: 40px;
+     height: 40px;
+ }
+ /* 07. Result Scetion Start ------------------------------ */
+ 
+ .result_box {
+     /* opacity: 0; */
+     /* pointer-events: none; */
+     transition: all 0.3s ease;
+ }
+ 
+ .result_box .row {
+     font-size: 16px;
+     font-weight: 600;
+ }
+ 
+ .result_box .price_box #price_img {
+     width: 150px;
+ }
+ 
+ .result_box .price_box p {
+     color: #003865;
+ }
+ 
+ #result_print {}
+ /* .result_box .col-4 {
+     position: relative;
+     transform: translateY(-50px);
+ } */
+ /* -------------  Result Scetion  End ------------- */
+ 
+ .info_box.activeInfo,
+ .result_box.activeResult,
+ .home.activeHome,
+ .price_box.activePrice {
+     opacity: 1;
+     z-index: 5;
+     pointer-events: auto;
+ }
+ 
+ .quiz_box.activeQuiz {
+     opacity: 1;
+     z-index: 5;
+     pointer-events: auto;
+ }
+ 
+ .correct {
+     color: #155724;
+     background: #d4edda;
+     border: 1px solid #c3e6cb;
+ }
+ 
+ .incorrect {
+     color: #721c24;
+     background: #f8d7da;
+     border: 1px solid #f5c6cb;
+ }
+ 
+ .disabled {
+     pointer-events: none;
+     cursor: default !important;
+ }
+ 
+ .option_list .option .icon {
+     height: 26px;
+     width: 26px;
+     border: 2px solid transparent;
+     border-radius: 50%;
+     text-align: center;
+     font-size: 13px;
+     pointer-events: none;
+     transition: all 0.3s ease;
+     line-height: 24px;
+ }
+ 
+ .option_list .option .icon.tick {
+     color: #23903c;
+     border-color: #23903c;
+     background: #d4edda;
+ }
+ 
+ .option_list .option .icon.cross {
+     color: #a42834;
+     background: #f8d7da;
+     border-color: #a42834;
+ }
+ 
+ .skip {
+     display: block;
+ }
+ 
+ .show {
+     opacity: 1;
+     pointer-events: auto;
+     transform: scale(1);
+ }
+ 
+ .ansDull {
+     opacity: 50%;
+     pointer-events: none;
+ }
+ 
+ .dnoe {
+     display: none;
+     visibility: hidden;
+ }
+ 
+ .fiftydisabled {
+     pointer-events: none;
+ }
+ /* ================ welcome section satar ================ */
+ 
+ .welcome img {
+     width: 300px;
+     margin-bottom: 30px;
+ }
+ 
+ .welcome {
+     width: 600px;
+     position: fixed;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+ 
+ .welcome li {
+     transition: all .5s;
+     cursor: pointer;
+ }
+ 
+ .welcome li:nth-child(1) {
+     background-color: #C84B31;
+ }
+ 
+ .welcome li:nth-child(2) {
+     background-color: #1E5F74;
+ }
+ 
+ .welcome li:nth-child(3) {
+     background-color: #B0A565;
+ }
+ 
+ .welcome li:nth-child(4) {
+     background-color: #e28743;
+ }
+ 
+ .welcome a {
+     color: #000;
+     font-weight: 700;
+     letter-spacing: 1px;
+     transition: all .5s;
+ }
+ 
+ .welcome li:hover {
+     background-color: #EF5B0C;
+ }
+ 
+ .welcome li:hover a {
+     color: white;
+ }
+ /* ================ welcome section end ================ */
